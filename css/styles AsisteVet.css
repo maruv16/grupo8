@@ -1,0 +1,83 @@
+/* Estilos general de la pagina */
+body, header, footer {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background-color: #000010;
+}
+
+body, header, footer {
+    background-color: #5e3684;
+    padding: 20px;
+    text-align: center; /* Centrar el contenido del body, header, footer */
+}
+
+header div {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la imagen del logo */
+header div img {
+    width: 200px; /* Tamaño del logo */
+    height: auto;
+}
+
+
+nav {
+    text-align: center; 
+}
+nav {
+    background-color: #3ebccb;
+    color: #ffffff;
+    
+}
+
+nav ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block; 
+    margin-right: 20px; 
+}
+
+nav ul li:last-child {
+    margin-right: 0; 
+}
+
+
+nav ul li a {
+    text-decoration: none; 
+    color: #fff; 
+    padding: 5px 10px; 
+    border: 1px solid black; 
+    border-radius: 5px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+nav ul li a:hover {
+    background-color: #6ba520; 
+}
+
+/* Estilos para los contenedores */
+.container {
+    width: 30%; /* Ancho de cada contenedor */
+    height: 100px; /* Altura de cada contenedor (solo para este ejemplo) */
+    border: 0px solid #000; /* Borde para visualizarlos */
+    display: inline-block; /* Hace que los contenedores se alineen horizontalmente */
+    margin-right: 0px; /* Espacio entre los contenedores */
+}
+/* Estilos para la imagen de los contenedores */
+.container img {
+    width: 300px; /* Tamaño de las imagenes */
+    height: auto;
+}
+
