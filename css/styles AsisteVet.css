@@ -1,5 +1,5 @@
 /* Estilos general de la pagina */
-body, header, footer {
+body, header {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -7,32 +7,31 @@ body, header, footer {
     background-color: #000010;
 }
 
-body, header, footer {
+h1{
+    background-color: #6a19d4;
+}
+body, header{
     background-color: #5e3684;
-    padding: 20px;
-    text-align: center; /* Centrar el contenido del body, header, footer */
+    padding: 10px;
+    text-align: center; 
 }
 
-header div {
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    margin-bottom: 20px;
+.background-image {
+  background-image: url('../img/logoasistvet.jpeg'); 
+  background-size: contain;
+  background-position: center;
+  position: relative;
+  padding: 30px; 
+  box-sizing: border-box; 
+  
 }
-
-/* Estilos para la imagen del logo */
-header div img {
-    width: 200px; /* Tamaño del logo */
-    height: auto;
-}
-
-
 nav {
     text-align: center; 
 }
 nav {
     background-color: #3ebccb;
     color: #ffffff;
+    text-align: center;
     
 }
 
@@ -67,17 +66,48 @@ nav ul li a:hover {
     background-color: #6ba520; 
 }
 
-/* Estilos para los contenedores */
-.container {
-    width: 30%; /* Ancho de cada contenedor */
-    height: 100px; /* Altura de cada contenedor (solo para este ejemplo) */
-    border: 0px solid #000; /* Borde para visualizarlos */
-    display: inline-block; /* Hace que los contenedores se alineen horizontalmente */
-    margin-right: 0px; /* Espacio entre los contenedores */
+@media (max-width: 300px) {
+   
 }
-/* Estilos para la imagen de los contenedores */
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+ 
+}
+
+
+@media (min-width: 1025px) {
+   
+}
+.carousel {
+    width: 80%; 
+    margin: 0 auto; 
+    padding: 20px;
+  }
+  
+  
+  .carousel-item img {
+    max-width: 100%;
+    height: auto; 
+  }
+  
+.container {
+    width: 30%; 
+    height: 100px; 
+    border: 0px solid #000; 
+    display: inline-block; 
+    margin-right: 0px; 
+}
+
 .container img {
-    width: 300px; /* Tamaño de las imagenes */
+    width: 200px; 
     height: auto;
+}
+footer {
+    background-color: #d66418; 
+    color: #fff; 
+    padding: 20px 0; 
+    text-align: center; 
+   
 }
 

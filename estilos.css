@@ -20,6 +20,7 @@ header {
     height: 7vw;
 }
 
+
 #productos .prod_perros img {
     height: 30vw;
     border-radius: 50%;
@@ -33,3 +34,4 @@ header {
     opacity: 0.9;
     filter: grayscale(0);
 }
+

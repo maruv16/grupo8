@@ -4,27 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./img/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles AsisteVet.css">
     <title> AsistVet | Tienda online de mascotas</title>
+    
 </head>
 <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <header>
-        <div>
-            <img src="./img/logo.jpg" alt="Logo AsistVet" id="logo">
-            <h1>Veterinaria & Petshop</h1>
-        </div>
+       
             <nav>
-                <ul>
-                    <li><a href="#logo">Inicio</a></li>
-                    <li><a href="#mascotas">Mascotas</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#ubicacion">Sucursales</a></li>
-                    <li><a href="#ofertas">Ofertas</a></li> 
-                </ul>
-            <h1>Quienes Somos</h1>
-                <p><i>Desde Asistvet pensamos en los animales de compañía como un miembro más de la familia y estamos 100% comprometidos a promover la tenencia responsable hacia los animales. Somos especialistas en el bienestar cotidiano de tu animal de compañía, socios en la diversión y la calidad de vida que ellos se merecen.</i></p>
+                <ul class="links">
+                   
+               </div>
+                   <li><a href="#nosotros">Quienes somos</a></li>
+                   <li><a href="#productos">Productos</a></li>
+                   <li><a href="#servicios">Servicios</a></li>
+                   <li><a href="#ofertas">Ofertas</li></a>
+                   <li><a href="#contacto">Escribinos</a></li>
+                   <li><a href="#dondeestamos">Donde estamos</a></li>
+               </ul> 
+                   <section id="nosotros">
+                   <h2>Quienes somos</h2>
+                   <p>Desde Asistvet pensamos en los animales de compañía como un miembro más de la familia y estamos 100% comprometidos
+                   a promover la tenencia responsable hacia los animales.
+       
+                   Somos especialistas en el bienestar cotidiano de tu animal de compañía, socios en la diversión y la calidad de vida que 
+                   ellos se merecen.</p>
             </nav>
-            <main>
+            <main class="background-image" >
+
             <section id="mascotas">
                 <h1>Selecciona a tu mascota</h1>
                 <div class="container">
@@ -39,27 +48,60 @@
                             <img src="./img/gato frente.png" alt="gato_frente">
                 </div></a>
             </section>
-        <section id="servicios"></section> <nav>
-            <ul>Mascotas</ul>
-                <li>Perros</li>
-                <li>Gatos</li>
-            <ul>Servicios</ul>
-                <li>Veterinaria</li>
-                <li>Peluquería</li>
-            <ul>Experiencia de usuario</ul>
-                <li>Dejanos tu opinión</li>
-            <ul>Sucursales</ul>
-                <li>CABA</li>
-                <li>Mendoza</li>
-                <li>Gran Buenos Aires</li>
-                <li>Buenos Aires</li>
-                <li>Rosario</li>
-                <li>Córdoba</li>
-            <ul>Obra Social</ul>
-            <ul>Marcas</ul>
-            <ul>Ofertas</ul>
-        </nav></main>
+
+            
+        <section id="servicios"></section> 
+       
+       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" style="width: 50%; margin: 0 auto;">
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/Excellent_Gatos_Adult.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/Excellent_Perros_AdultMedyGran.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/royalmaxiadulto.png" class= "d_block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>    
+   
     </header>
+     </main>
+     <h2>Servicios</h2>
+    
+</div>
+     <article>
+        <h3>Veterinaria</h3>
+        <ul>
+            <li>Consultas y diagnostico</li>
+            <li>Plan de Vacunacion</li>
+            <li>Desparasitaciones</li>
+            <li>Castraciones</li>
+            <li>Certificados de salud</li>
+        </ul>
+    </article>
+    <article>
+        <h3>Peluqueria Canina</h3>
+        <ul>
+            <li>Corte y baño completo</li>
+            <li>Baños Medicados</li>
+            <li>Baño y Corte sanitario</li>
+            <li>Cortes de raza</li>
+            <li>Baños y cepillado en gatos</li>
+        </ul>
+    </article>
+
     <section id="favoritos">
         <h3><b>Favoritos</b></h3>
         <article id="gatos">
@@ -75,7 +117,7 @@
         <h3><b>Promociones</b></h3>
         <article id="ahora3">
             <img src="./img/ahora3.jpg" alt="Ahora3">
-            <a href="./img/ahora3.jpg" title="Ir a la promoción mensual de 3 cuotas sin interés" target="blank"><img src="../img/ahora3.jpg" width="200" height="200" alt="ahora 3 cuotas sin interés"></a>
+           
             <p>3 cuotas con todas las tarjetas de crédito.</p>
         </article>
     </section>
@@ -131,31 +173,17 @@
             <input type="submit">
         </form>
     </section>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.5830303317457!2d-58.44937858731199!3d-34.614703957967954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca16688f8a33%3A0x205cc486f1e39b8!2sCucha%20Cucha%20619%2C%20C1405AIC%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1713134367367!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <footer>
-        <section id="contacto"></section><ul>Contacto</ul>
-            <li><a href="https://www.facebook.com/">Ir al facebook</a></li>
-            <li><a href="https://www.instagram.com/">Ir al instagram</a></li>
-            <li><a href="mailto:mishuellitas@gmail.com?subject=Contacto">Enviar correo</a></li>
-            <li><a href="https://web.whatsapp.com/">Enviar whatsapp</a></li>
-            <li>Lunes a sábados 9 a 19h hs</li>
-            <li>Atención telefónica: 0800-333-2222</li>
-        <ul>Sobre Mis Huellitas</ul>
-            <li>Institucional</li>
-            <li>Proveedores</li>
-            <li>Nuestra empresa</li>
-        <ul>Servicios</ul>
-            <li>Veterinaria</li>
-            <li>Peluquería</li>
-            <li>Adopciones responsables</li>
-        <ul>Tienda</ul>
-            <li>Seguir Envío</li>
-            <li>Legales</li>
-            <li>Boton de arrepentimiento</li>
-            <li>Tiendas</li>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.5830303317457!2d-58.44937858731199!3d-34.614703957967954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca16688f8a33%3A0x205cc486f1e39b8!2sCucha%20Cucha%20619%2C%20C1405AIC%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1713134367367!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <a href="#logo" title="Ir al tope de la página">Ir arriba</a>
-            <a href="#favoritos" title="Ir a los favoritos">Favoritos</a>
-            <a href="#promociones" title="Ir a las promociones actuales">Promociones</a></section>
+        
+        <img src="./img/bxl-facebook-circle.svg" alt="..">
+        <img src="./img/bxl-instagram-alt.svg" alt="">        
+        <img src="./img/bxl-whatsapp.svg" alt="">
+         <p>Domicilio: Av. Espora 1518 <br> Localidad: Valeria del Mar <br> Provincia: Buenos Aires</p>
+        <li>Lunes a sábados 9 a 19h hs</li>
+        <li>Atención telefónica: 0800-333-2222</li>
+        <p>Todos los derechos reservados - 2024</p> 
+           
     </footer>
     <script>
         function scrollToSection(sectionId) {
@@ -165,5 +193,7 @@
             }
         }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>
