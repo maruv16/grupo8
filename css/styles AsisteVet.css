@@ -1,58 +1,74 @@
-/* Estilos general de la pagina */
-body, header, footer {
-    font-family: Arial, sans-serif;
-    margin: 0;
+* {
+    box-sizing: border-box;
     padding: 0;
-    color: #ffffff;
-    background-color: #000010;
+    margin: 0;
 }
 
-body, header, footer {
-    background-color: #5e3684;
-    padding: 20px;
-    text-align: center; /* Centrar el contenido del body, header, footer */
+html {
+    height: 100vh;
 }
 
-header div {
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    margin-bottom: 20px;
-}
-
-/* Estilos para la imagen del logo */
-header div img {
-    width: 200px; /* Tamaño del logo */
-    height: auto;
-}
-
-
-nav {
-    text-align: center; 
-}
-nav {
-    background-color: #3ebccb;
-    color: #ffffff;
+body {
+    margin: 0;
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(237, 219, 241);
     
 }
 
-nav ul {
-    list-style-type: none; 
-    padding: 0;
-    margin: 0;
+
+/* Style del header */
+header {
+    background-color: rgba(94, 54, 132);
+    padding: 20px;
+    padding-bottom: 10px;
+    color: white;
 }
 
-nav ul li {
-    display: inline-block; 
-    margin-right: 20px; 
+.headercontent {
+    display: flex;
+    text-align: center;
+    
 }
 
-nav ul li:last-child {
-    margin-right: 0; 
+.headerlogo {
+    width: 10vw;
+    text-align: left;
+    
 }
 
+.title {
+    padding-left: 20px;
+}
 
-nav ul li a {
+nav {
+    /* display: flex; */
+    width: 100%;
+    padding: 20px;
+    margin-right: 0px;
+    align-items: right;
+    background-color: rgba(94, 54, 132);
+    /* justify-content: space-between; */
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    
+}
+
+.navlinks li{
+    display: inline-block;
+    padding-right: 40px;
+    justify-content: space-between;
+    
+}
+
+.navlinks a {
+
     text-decoration: none; 
     color: #fff; 
     padding: 5px 10px; 
@@ -63,21 +79,191 @@ nav ul li a {
     align-items: center
 }
 
-nav ul li a:hover {
-    background-color: #6ba520; 
+.navlinks a:hover {
+    background-color: #f2a725e0;
 }
 
-/* Estilos para los contenedores */
-.container {
-    width: 30%; /* Ancho de cada contenedor */
-    height: 100px; /* Altura de cada contenedor (solo para este ejemplo) */
-    border: 0px solid #000; /* Borde para visualizarlos */
-    display: inline-block; /* Hace que los contenedores se alineen horizontalmente */
-    margin-right: 0px; /* Espacio entre los contenedores */
+.title_h2 {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
 }
-/* Estilos para la imagen de los contenedores */
+
+#productos {
+    padding-bottom: 20px;
+}
+
 .container img {
-    width: 300px; /* Tamaño de las imagenes */
+    width: 300px; 
     height: auto;
 }
+
+.container {
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px
+}
+
+.item {
+    height: auto;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.title_h3 {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.item {
+    text-align: center;
+}
+
+.carousel {
+    width: 80%; 
+    margin: 0 auto; 
+    padding: 20px;
+}
+  
+  
+.carousel-item img {
+    max-width: 100%;
+    height: auto; 
+}
+
+.contactanos_container{
+    display: flex;
+    margin-top: 3vw;
+    position: relative;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.contactanos{
+    font-size: 2vw;
+    font-family: var(--fuente);
+    text-align: center;
+}
+
+#contacto {
+    position: relative;
+    left: 30%;
+    margin-top: 3vw;
+    width: 40vw;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 1vw;
+    text-align: center;
+}
+
+#contacto form label {
+    font-size: 15px;
+    text-align: center;
+    
+}
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+input[type=submit] {
+    width: 100%;
+    background-color: rgba(94, 54, 132);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #f2a725e0;
+}
+
+textarea{
+    margin-top: 5px;
+    width: 100%;
+}
+
+.articulo_mapa{
+    margin-top: 5vw;
+}
+
+#dondeestamos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.dondeestamos img{
+    height: 30vw;
+}
+
+.dondeestamos_domicilio {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+#map {
+    height: 20vw;
+    width: 25vw;
+    border: 0;
+    margin-bottom: 25px;
+    
+}
+
+.container_footer {
+    background-color: #7845a7;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.footer_logo {
+    width: 8vw;
+    
+}
+
+.item_footer {
+    list-style-type: none;
+    text-align: center;
+}
+
+.sector_redes {
+    text-align: center;
+    display: inline-flex;
+    padding: 10px;
+    margin-left: 15px;
+}
+
 
