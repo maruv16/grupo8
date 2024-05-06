@@ -1,17 +1,9 @@
-<<<<<<< HEAD
 * {
     box-sizing: border-box;
-=======
-/* Estilos general de la pagina */
-body, header {
-    font-family: Arial, sans-serif;
-    margin: 0;
->>>>>>> 9c78dd79ca62aa97f87c6b458aea40336f4bcafd
     padding: 0;
     margin: 0;
 }
 
-<<<<<<< HEAD
 html {
     height: 100vh;
 }
@@ -24,33 +16,6 @@ body {
     font-weight: 400;
     font-style: normal;
     background-color: rgb(237, 219, 241);
-=======
-h1{
-    background-color: #6a19d4;
-}
-body, header{
-    background-color: #5e3684;
-    padding: 10px;
-    text-align: center; 
-}
-
-.background-image {
-  background-image: url('../img/logoasistvet.jpeg'); 
-  background-size: contain;
-  background-position: center;
-  position: relative;
-  padding: 30px; 
-  box-sizing: border-box; 
-  
-}
-nav {
-    text-align: center; 
-}
-nav {
-    background-color: #3ebccb;
-    color: #ffffff;
-    text-align: center;
->>>>>>> 9c78dd79ca62aa97f87c6b458aea40336f4bcafd
     
 }
 
@@ -118,7 +83,6 @@ ul {
     background-color: #f2a725e0;
 }
 
-<<<<<<< HEAD
 .title_h2 {
     text-align: center;
     margin-top: 25px;
@@ -132,51 +96,6 @@ ul {
 .container img {
     width: 300px; 
     height: auto;
-=======
-@media (max-width: 300px) {
-   
-}
-
-
-@media (min-width: 601px) and (max-width: 1024px) {
- 
-}
-
-
-@media (min-width: 1025px) {
-   
-}
-.carousel {
-    width: 80%; 
-    margin: 0 auto; 
-    padding: 20px;
-  }
-  
-  
-  .carousel-item img {
-    max-width: 100%;
-    height: auto; 
-  }
-  
-.container {
-    width: 30%; 
-    height: 100px; 
-    border: 0px solid #000; 
-    display: inline-block; 
-    margin-right: 0px; 
-}
-
-.container img {
-    width: 200px; 
-    height: auto;
-}
-footer {
-    background-color: #d66418; 
-    color: #fff; 
-    padding: 20px 0; 
-    text-align: center; 
-   
->>>>>>> 9c78dd79ca62aa97f87c6b458aea40336f4bcafd
 }
 
 .container {
