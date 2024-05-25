@@ -1,0 +1,162 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    margin: 0;
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(237, 219, 241);
+    
+}
+
+
+header {
+    background-color: rgba(94, 54, 132);
+    padding: 20px;
+    padding-bottom: 10px;
+    color: white;
+    justify-content: space-between;
+}
+
+.headercontent {
+    display: flex;
+    text-align: center;
+    
+}
+
+.headerlogo {
+    width: 10vw;
+    text-align: left;
+    
+}
+
+.title {
+    padding: auto;
+    padding-left: 20px;
+}
+
+nav {
+    width: 100%;
+    padding: 5px;
+    margin-right: 0px;
+    align-items: right;
+    background-color: rgba(94, 54, 132);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    
+}
+
+.navlinks li{
+    display: inline-block;
+    padding-right: 40px;
+    /* justify-content: space-between; */
+}
+
+.navlinks a {
+
+    text-decoration: none; 
+    color: #fff; 
+    padding: 5px 10px; 
+    border: 1px solid black; 
+    border-radius: 5px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s all;
+}
+
+.navlinks a:hover {
+    background-color: #f2a725e0;
+}
+
+/* Estilos de la sección de productos */
+#productos-destacados {
+    text-align: center;
+}
+
+#productos-destacados h2 {
+    margin-bottom: 20px;
+}
+
+.producto {
+    display: inline-block;
+    width: calc(25% - 20px);
+    margin: 10px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.producto img {
+    max-width: 100%;
+}
+
+.producto h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.producto p {
+    margin-bottom: 10%;
+}
+
+.producto button {
+    background-color: #333;
+    color: #fff;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.producto button:hover {
+    background-color: #555;
+}
+
+.precio {
+    font-size: 18px;
+}
+
+.container_footer {
+    background-color: #7845a7;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.footer_logo {
+    width: 8vw;
+    
+}
+
+.item_footer {
+    list-style-type: none;
+    text-align: center;
+}
+
+.sector_redes {
+    text-align: center;
+    display: inline-flex;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+

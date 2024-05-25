@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veterinaria - Tienda de Mascotas</title>
     <link rel="shortcut icon" href="img/logoasistvet.ico" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/index.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script></script>
+    <script src="index.js"></script>
     
 
 </head>
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
     <header>
-        <div class="headercontent">
+        <div id="encabezado" class="headercontent">
             
             <a href="index.html">
                 <img class="headerlogo" src="img/logoasistvet.jpeg" alt="logo_asistvet">
@@ -28,15 +28,17 @@
     </header>
     <nav> 
         <ul class="navlinks">
-            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="#productos">Productos</a></li>
-            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
             <li><a href="#ofertas">Ofertas</a></li> 
             <li><a href="#contacto">Contacto</a></li>
             <li><a href="#dondeestamos">Donde estamos</a></li>
         </ul>
     </nav>
     <main>
+        <a class="button-up" href="#encabezado">Ir a inicio</a>
+        
         <section id="productos">
             <h2 class="title_h2">Selecciona a tu mascota</h2>
             <div class="container">
@@ -44,13 +46,12 @@
                     <h3 class="title_h3">Perros</h3>
                     <img src="img/perro frente.png" alt="perro_frente">
                 </a>
-                <a href="Tienda Gatos.html">
+                <a href="Tienda Gatos.html" class="tienda_gatos">
                     <h3 class="title_h3">Gatos</h3>
                     <img src="img/gato frente.png" alt="gato_frente">
                 </a>
             </div>
         </section>
-
         
         <section id="servicios">
             <h2 class="title_h2">Nuestros servicios</h2>
@@ -69,6 +70,7 @@
         
         <section id="ofertas">
             <h2 class="title_h2">Ofertas Imperdibles!</h2>
+            
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner" style="width: 50%; margin: 0 auto;">
             <div id="carouselExample" class="carousel slide">
@@ -108,8 +110,9 @@
                 </button>
               </div>    
         </section>
+               
         <section class="contactanos_container" id="contactanos_container">
-            <h2 class="contactanos">Contactanos</h2>
+            <h2 class="title_h2">Contactanos</h2>
         </section>
         <article id="form">
             <div id="contacto">
@@ -125,7 +128,7 @@
                     </select>
                     <label for="descripcion">Consulta<br></label>
                     <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Consulta.."></textarea>
-                    <input type="submit" value="Submit" class="submit">
+                    <input type="submit" value="Enviar" class="submit">
                 </form>
             </div>
         </article>
@@ -162,5 +165,10 @@
             
         </aside>
     </footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+
+

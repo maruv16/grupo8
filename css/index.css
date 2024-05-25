@@ -4,10 +4,6 @@
     margin: 0;
 }
 
-html {
-    height: 100vh;
-}
-
 body {
     margin: 0;
     height: 100%;
@@ -19,8 +15,6 @@ body {
     
 }
 
-
-/* Style del header */
 header {
     background-color: rgba(94, 54, 132);
     padding: 20px;
@@ -31,7 +25,6 @@ header {
 .headercontent {
     display: flex;
     text-align: center;
-    
 }
 
 .headerlogo {
@@ -45,26 +38,50 @@ header {
 }
 
 nav {
-    /* display: flex; */
     width: 100%;
-    padding: 20px;
+    padding: 5px;
     margin-right: 0px;
     align-items: right;
     background-color: rgba(94, 54, 132);
-    /* justify-content: space-between; */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 ul {
     list-style-type: none;
     text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
     
 }
 
 .navlinks li{
     display: inline-block;
     padding-right: 40px;
-    justify-content: space-between;
     
+}
+
+.button-up {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(94, 54, 132);
+    color:white;
+    /* text-align: center; */
+    padding: 5px;
+    border-radius: 999px;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    box-sizing: border-box;
+    transition: 0.5s all;
+    text-decoration: none;
+    text-align: center 
+}
+
+.button-up:hover {
+    background-color: #f2a725e0
 }
 
 .navlinks a {
@@ -76,26 +93,28 @@ ul {
     border-radius: 5px; 
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
+    transition: 1s all;
 }
 
 .navlinks a:hover {
     background-color: #f2a725e0;
+    
 }
 
-.title_h2 {
-    text-align: center;
-    margin-top: 25px;
-    margin-bottom: 15px;
+main {
+    margin-top: 60px;
+    
 }
 
 #productos {
     padding-bottom: 20px;
 }
 
-.container img {
-    width: 300px; 
-    height: auto;
+.title_h2 {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
 }
 
 .container {
@@ -106,12 +125,9 @@ ul {
     gap: 20px
 }
 
-.item {
+.container img {
+    width: 300px; 
     height: auto;
-    width: 300px;
-    justify-content: center;
-    align-items: center;
-    
 }
 
 .title_h3 {
@@ -119,8 +135,13 @@ ul {
     margin-top: 25px;
     margin-bottom: 15px;
 }
+
 .item {
-    text-align: center;
+    height: auto;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center ;
 }
 
 .carousel {
@@ -128,8 +149,7 @@ ul {
     margin: 0 auto; 
     padding: 20px;
 }
-  
-  
+
 .carousel-item img {
     max-width: 100%;
     height: auto; 
@@ -144,12 +164,6 @@ ul {
     align-items: center;
     justify-content: center;
     
-}
-
-.contactanos{
-    font-size: 2vw;
-    font-family: var(--fuente);
-    text-align: center;
 }
 
 #contacto {
@@ -189,7 +203,7 @@ input[type=email], select {
     border-radius: 4px;
     box-sizing: border-box;
 }
-  
+
 input[type=submit] {
     width: 100%;
     background-color: rgba(94, 54, 132);
@@ -265,5 +279,114 @@ textarea{
     padding: 10px;
     margin-left: 15px;
 }
+@media only screen and (max-width: 900px) {
 
+	.navlinks li {
+        padding: 5px;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .item {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
 
+    .carousel-inner {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navlinks {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navlinks li {
+        padding: 5px;
+    }
+    .navlinks a {
+		padding: 0px; 
+		border: none; 
+		border-radius: 0px; 
+		display: flex;
+		transition: 1s all;
+}
+	.navlinks a:hover {
+		color: #f2a725e0;
+    }
+    
+    .carousel-inner {
+        width: 80%;
+    }
+
+    #form {
+        display: block;
+        padding: 0 1rem;
+    }
+}
+
+/* Hasta 480px */
+@media only screen and (max-width: 480px) {
+    .title {
+        font-size: 1.2rem;
+    }
+    
+    .headerlogo {
+        width: 40px;
+    }
+    
+    .container {
+        flex-direction: column;
+    }
+    
+    .item {
+        width: 90%;
+    }
+    
+   
+    .navlinks {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navlinks li {
+        margin: 0.5rem 0;
+        padding: 3px
+    }
+    .navlinks a {
+		font-size: 0.8em;
+		padding: 0px; 
+		border: none; 
+		border-radius: 0px; 
+		display: flex;
+		transition: 1s all;
+}
+	.navlinks a:hover {
+		color: #f2a725e0;
+    }
+    .title_h2, title_h3 {
+		font-size: 1.5em
+	}
+	
+	#contacto {
+    position: relative;
+    left: 30%;
+    margin-top: 3vw;
+    width: 40vw;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 1vw;
+    text-align: center;
+}
+
+	#contacto form label {
+    font-size: 15px;
+    text-align: center;
+    
+}
+
+}
