@@ -10,18 +10,13 @@ document.addEventListener("DOMContentLoaded", function() {
     menuProductos.addEventListener ('mouseleave', () => {
         submenu.style.display = "none";
     });
-
     if (serviciosMenu) {
         serviciosMenu.addEventListener('mouseover', () => {
-            submenu.style.display = "none";  // Ocultar el submenú de productos
+            submenu.style.display = "none";  
         });
-
         serviciosMenu.addEventListener('mouseleave', () => {
-            // Opcional: Ocultar el menú de servicios si tuviera un submenú
         });
     }
-
-    // Ocultar los submenús al hacer clic en cualquier parte del documento
     document.addEventListener('click', (event) => {
         if (!productosMenu.contains(event.target)) {
             submenu.style.display = "none";
