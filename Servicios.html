@@ -10,14 +10,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/all.min.css">
-    <script src="index.js"></script>
-    
-
 </head>
+
 <body>
+
     <header>
-        <div class="headercontent">
-            
+        <div id="encabezado" class="headercontent">
             <a href="index.html">
                 <img class="headerlogo" src="img/logoasistvet.jpeg" alt="logo_asistvet">
             </a>
@@ -28,14 +26,21 @@
     <nav> 
         <ul class="navlinks">
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="#productos">Productos</a></li>
-            <li><a href="Servicios.html">Servicios</a></li>
-            <li><a href="#ofertas">Ofertas</a></li> 
+            <li id="productos-menu" class="dropdown">
+                <a href="#productos">Productos</a>
+                <ul class="submenu">
+                    <li><a href="Tienda Perros.html">Alimentos para Perros</a></li>
+                    <li><a href="Tienda Gatos.html">Alimentos para Gatos</a></li>
+                </ul>
+            </li>
+            <li id="servicios-menu"><a href="servicios.html">Servicios</a></li>
+            <li><a href="#ofertas">Ofertas</a></li>
             <li><a href="#contacto">Contacto</a></li>
             <li><a href="#dondeestamos">Donde estamos</a></li>
         </ul>
     </nav>
     <main>
+        <a class="button-up" href="#encabezado">Ir a inicio</a>
         <h2 class="title_h2">Clínica Veterinaria</h2>
         <h3 class="title_h3_vet">Nuestro compromiso con la Salud de tus Mascotas</h3>
         <section class="flex-container-vet">

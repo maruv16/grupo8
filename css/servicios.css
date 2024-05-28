@@ -5,7 +5,6 @@
 }
 
 html, body {
-	height: 100%;
 	margin: 0;
 	font-family: "Montserrat", sans-serif;
 	background-color: rgb(237, 219, 241);
@@ -25,18 +24,18 @@ header {
 
 .headerlogo {
     width: 10vw;
-    text-align: left;
-    
+    text-align: left;  
 }
 
 .title {
     padding-left: 20px;
 }
 
-
 nav {
     width: 100%;
     padding: 5px;
+    margin-right: 0px;
+    align-items: right;
     background-color: rgba(94, 54, 132);
     position: sticky;
     top: 0;
@@ -50,30 +49,95 @@ ul {
     margin-bottom: 5px;
 }
 
+.navlinks {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    max-width: 1200px;
+    height: 100%;
 
+}
 
 .navlinks li{
-    display: inline-block;
     padding-right: 40px;
-    padding-bottom: 5px
+    position: relative;
     
 }
 
 .navlinks a {
-
     text-decoration: none; 
     color: #fff; 
     padding: 5px 10px; 
     border: 1px solid black; 
     border-radius: 5px; 
     display: flex;
-    transition: 1s all;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s all;
 }
 
 .navlinks a:hover {
     background-color: #f2a725e0;
     
 }
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #7845a7a4;;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.submenu li {
+    margin: 0;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.submenu li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    border: none;
+}
+
+#productos-menu:hover .submenu {
+    display: block;
+}
+
+
+
+.button-up {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(94, 54, 132);
+    color:white;
+    /* text-align: center; */
+    padding: 5px;
+    border-radius: 999px;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    box-sizing: border-box;
+    transition: 0.5s all;
+    text-decoration: none;
+    text-align: center 
+}
+
+.button-up:hover {
+    background-color: #f2a725e0
+}
+
 .title_h2 {
     text-align: center;
     margin-top: 25px;
@@ -131,31 +195,31 @@ ul {
 }
 
 .flex_item1_p1,.flex_item3_p2 {
-    flex: 1 1 30%; /* Hace que los párrafos ocupen aproximadamente el 30% del contenedor */
-    text-align: justify; /* Justifica el texto */
-    margin: 0 10px; /* Margen alrededor de los párrafos */
+    flex: 1 1 30%; 
+    text-align: justify;
+    margin: 0 10px; 
     line-height: 2;
 }
 
 .flex_item2_img {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centra los iconos dentro del div */
-    align-items: center; /* Centra los iconos verticalmente */
-    margin: 50px 10px; /* Margen alrededor del contenedor de iconos */
+    justify-content: center; 
+    align-items: center;
+    margin: 50px 10px; 
 }
 
 .flex_item2_img i {
-    font-size: 40px; /* Tamaño de los iconos */
-    margin: 15px 0; /* Espacio vertical entre los iconos */
+    font-size: 40px;
+    margin: 15px 0;
 }
 
 .flex_item4_img_vet, 
 .flex_item5_titulo_Lista {
-    flex-grow: 1; /*Hace que estos elementos ocupen aproximadamente el 45% del contenedor */
+    flex-grow: 1; 
     flex-shrink: 1;
     flex-basis: 45%;
-    margin: 0 10px; /* Margen alrededor de estos elementos */
+    margin: 0 10px; 
     text-align: center;
 }
 
@@ -166,7 +230,7 @@ ul {
 }
 
 .flex_item5_titulo_Lista {
-    text-align: left; /* Alinea el texto a la izquierda */
+    text-align: left;
 }
 
 .flex_item5_titulo{
@@ -175,7 +239,7 @@ ul {
     margin-top: 0;
 }
 .flex_item5_Lista {
-    padding-left: 50px; /* Espacio a la izquierda de la lista */
+    padding-left: 50px; 
     line-height: 1.5;
     
 }
@@ -228,8 +292,7 @@ ul {
     margin-left: 15px;
 }
 
-/* Hasta 900px */
-@media only screen and (min-width: 900px) {
+@media only screen and (max-width: 900px) {
     .headercontent {
         flex-direction: column;
         align-items: center;
@@ -251,7 +314,7 @@ ul {
     }
 }
 
-/* Hasta 768px */
+
 @media only screen and (max-width: 768px) {
     .headerlogo {
         width: 80px;
@@ -283,7 +346,7 @@ ul {
         padding-left: 20px;
     }
 }
-/* Hasta 480px */
+
 @media only screen and (max-width: 480px) {
     header, main, footer {
         padding: 5px;
@@ -327,13 +390,4 @@ ul {
         width: 100%;
     }
 }
-
-@media (max-width: 768px) {
-    .headercontent {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-
-
 

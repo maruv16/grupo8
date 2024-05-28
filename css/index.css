@@ -4,13 +4,9 @@
     margin: 0;
 }
 
-body {
+html, body {
     margin: 0;
-    height: 100%;
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
     background-color: rgb(237, 219, 241);
     
 }
@@ -56,10 +52,58 @@ ul {
     
 }
 
+
+.navlinks {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    max-width: 1200px;
+    height: 100%;
+
+}
+
 .navlinks li{
-    display: inline-block;
     padding-right: 40px;
+    position: relative;
     
+}
+
+#productos {
+    padding-bottom: 20px;
+}
+
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #7845a7a4;;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.submenu li {
+    margin: 0;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.submenu li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    border: none;
+}
+
+#productos-menu:hover .submenu {
+    display: block;
 }
 
 .button-up {
@@ -85,7 +129,6 @@ ul {
 }
 
 .navlinks a {
-
     text-decoration: none; 
     color: #fff; 
     padding: 5px 10px; 
@@ -94,7 +137,7 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: 1s all;
+    transition: 0.5s all;
 }
 
 .navlinks a:hover {
@@ -107,9 +150,6 @@ main {
     
 }
 
-#productos {
-    padding-bottom: 20px;
-}
 
 .title_h2 {
     text-align: center;
@@ -300,11 +340,12 @@ textarea{
 }
 
 @media only screen and (max-width: 768px) {
-    .navlinks {
-        flex-direction: column;
-        align-items: center;
+    .headerlogo {
+        width: 80px;
     }
-    
+    .title {
+        font-size: 1.2em;
+    }
     .navlinks li {
         padding: 5px;
     }
@@ -319,43 +360,40 @@ textarea{
 		color: #f2a725e0;
     }
     
-    .carousel-inner {
-        width: 80%;
+    .flex_item4_img_vet img {
+        width: 100%;
     }
-
-    #form {
-        display: block;
-        padding: 0 1rem;
+    .flex_item2_img i {
+        font-size: 30px;
     }
+    .flex_item5_Lista {
+        padding-left: 20px;
+    }
+    
 }
-
-/* Hasta 480px */
 @media only screen and (max-width: 480px) {
+    header, main, footer {
+        padding: 5px;
+        margin: 0;
+    }
     .title {
-        font-size: 1.2rem;
+        font-size: 1.2em;
     }
-    
     .headerlogo {
-        width: 40px;
+        width: 60px;
     }
     
-    .container {
-        flex-direction: column;
-    }
-    
-    .item {
-        width: 90%;
-    }
-    
-   
-    .navlinks {
-        flex-direction: column;
-        align-items: center;
-    }
 
+    .title_h2, .title_h3_vet, .title_h3_pelu {
+        font-size: 1.2em;
+    }
+    
+    .navlinks a:hover {
+    color: #f2a725e0;
+    }
+    
     .navlinks li {
-        margin: 0.5rem 0;
-        padding: 3px
+        padding: 3px;
     }
     .navlinks a {
 		font-size: 0.8em;
@@ -365,28 +403,15 @@ textarea{
 		display: flex;
 		transition: 1s all;
 }
-	.navlinks a:hover {
-		color: #f2a725e0;
+    .flex_item2_img i {
+        font-size: 25px;
     }
-    .title_h2, title_h3 {
-		font-size: 1.5em
-	}
-	
-	#contacto {
-    position: relative;
-    left: 30%;
-    margin-top: 3vw;
-    width: 40vw;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 1vw;
-    text-align: center;
-}
+    .flex_item5_Lista {
+        padding-left: 10px;
+    }
 
-	#contacto form label {
-    font-size: 15px;
-    text-align: center;
+    .flex_item4_img_vet img {
+        width: 100%;
+    }
     
-}
-
 }
