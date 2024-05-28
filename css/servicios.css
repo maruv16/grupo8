@@ -114,8 +114,6 @@ ul {
     display: block;
 }
 
-
-
 .button-up {
     display: block;
     width: 60px;
@@ -134,7 +132,7 @@ ul {
     text-align: center 
 }
 
-.button-up:hover {
+.button-up, .button-res:hover {
     background-color: #f2a725e0
 }
 
@@ -174,15 +172,18 @@ ul {
     margin-top: 25px;
     margin-bottom: 15px;
 }
+
 .item {
     text-align: center;
 }
+
 .title_h3_vet {
     padding-left: 15px;
     text-align: left;
     margin-top: 25px;
     margin-bottom: 25px;
 }
+
 .flex-container-vet {
     display: flex;
     flex-wrap: wrap;
@@ -229,6 +230,65 @@ ul {
     border-radius: 15px;
 }
 
+.flex-container-reserva{
+    display: flex;
+    margin-top: 3vw;
+    position: relative;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#reserva {
+    position: relative;
+    left: 30%;
+    margin-top: 3vw;
+    width: 40vw;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 1vw;
+    text-align: center;
+}
+
+#reserva form label {
+    font-size: 15px;
+    text-align: center;
+    
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: rgba(94, 54, 132);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
 .flex_item5_titulo_Lista {
     text-align: left;
 }
@@ -265,6 +325,7 @@ ul {
     margin-top: 15px;
     margin-bottom: 30px;
 }
+
 .container_footer {
     background-color: #7845a7;
     width: 100%;

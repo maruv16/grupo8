@@ -79,6 +79,41 @@
             </div>
         </section>
 
+        <section class="flex-container-reserva" id="flex-container-reserva">
+            <h2 class="title_h2">Reserva de turno</h2>
+        </section>
+        <article id="form">
+            <div id="reserva">
+                <form action="procesar_reserva.php" method="POST">
+                    <label for="nombre">Dueña/o:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="nombre_mascota">Nombre de la mascota</label>
+                    <input type="text" id="nombre_mascota" name="nombre_mascota" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="mascota">Tipo de mascota:</label>
+                    <select id="mascota" name="mascota" required>
+                        <option value="gato">Gato</option>
+                        <option value="perro">Perro</option>
+                    </select>
+                    <label for="tipo_consulta">Tipo de consulta</label>
+                    <select id="tipo_consulta" name="tipo_consulta">
+                        <option value="consulta_y_chequeo">Consulta y chequeo</option>
+                        <option value="vacunacion_y_desparasitacion">Vacunación y desparasitación</option>
+                        <option value="diagnosito_por_imagenes">Diagnóstico por imágenes</option>
+                        <option value="castraciones">Castraciones</option>
+                        <option value="odontologia_vet">Odontología veterinaria</option>
+                        <option value="otras_consultas">Otras consultas</option>
+                    </select>
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="hora" name="hora" required>
+                    <button class="button-res" type="submit">Enviar Reserva</button>
+                </form>
+            </div>
+        </article>
+        
         <h2 class="title_h2">Peluquería Canina</h2>
 
         <h3 class="title_h3_pelu">Cuidamos la estetica y salud de tu Mascota</h3>
