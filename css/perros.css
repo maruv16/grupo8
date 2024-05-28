@@ -193,9 +193,6 @@ ul {
     background-color: #f2a725e0;
 }
 
-.precio {
-    font-size: 2vw;
-}
 
 @media screen and (max-width: 768px) {
 	.headerlogo {
