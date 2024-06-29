@@ -284,3 +284,16 @@ ul {
     padding: 10px;
     margin-left: 15px;
 }
+
+article {
+    padding: 25px;
+    background-color: #7845a7;
+    border-radius: 25px;
+}
+
+article img {
+    border-radius: 999px;
+    background-color: antiquewhite;
+
+    widht: 75%;
+}
