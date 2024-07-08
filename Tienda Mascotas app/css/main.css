@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: rgb(237, 219, 241);
+    
+}
+
+header {
+        background-color: rgba(94, 54, 132);
+        padding: 20px;
+        color: white;
+    
+}
+    .headercontent {
+            display: flex;
+            align-items: center;
+            text-align: center;
+    }
+
+        .headerlogo {
+                    width: 10vw;
+                    text-align: left;   
+        } 
+        
+        .title {
+                padding-left: 20px;
+                font-weight: 700;
+        }         
+
+main {
+    min-height: 100vh;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    padding-bottom: 20px;
+}
+
+    h2 {
+        color: black;
+        padding: 20px;
+    }
+
+    .button-container {
+        display: flex;
+        gap: 10px;
+        padding: 0 20px 20px 20px;
+    }
+
+    .headerActionButton {
+        
+        color: black;
+        border: none; 
+        background-color: transparent;
+        font-weight: 200;
+        font-size: 1em;
+        transition: all 0.2s;
+        
+    }
+
+    .headerActionButton:hover {
+        color: #7845a7;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+                
+    .alimentos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex: 1;
+        gap: 20px;
+        padding: var(--terciary-padding);
+    
+
+        .alimentos-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding-bottom: 20px;
+
+            .alimento {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                width: 300px;
+                height: 550px;
+                padding: 20px;
+                transition: all 0.1s;
+                background-color: #fff;
+                border-radius: 15px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+
+                .alimento::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: auto;
+                }
+
+                hr, .descripcion, .acciones, .fecha {
+                        position: relative;
+                        z-index: 1;
+                }
+
+                h3 {
+                        padding: var(--min-padding);
+                        z-index: 1;
+                        color: #333;
+                }
+
+                hr {
+                        width: 100%;
+                        margin: 5px;
+                        z-index: 1;
+                }
+
+                .descripcion {
+                    padding: var(--min-padding);
+                    line-height: 1.5em;
+                    flex: 1;
+                    width: 100%;
+                    z-index: 1;
+                    color: #333;
+                }
+
+                .imgcontainer {
+                    opacity: 0.6;
+                    justify-self: center;
+                }
+            
+                .acciones {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    align-items: center;
+                    opacity: 0.8;
+                    font-size: 2em;
+                    transition: all 0.1s;
+                    z-index: 1;
+                
+                    button {
+                            position: relative;
+                            margin: 0 5px;
+                            color: black;
+                            transition: all 0.2s;
+                            border: none;
+                            background-color: transparent;
+                            font-size: 1em;
+                            
+                    }
+                
+                    button:hover {
+                        color: #7845a7;
+                        cursor: pointer;
+                        text-decoration: underline;
+                    }           
+                
+    
+                    #Eliminar:hover, #Editar:hover, #alta:hover {
+                        color: rgba(94, 54, 132);
+                    }
+                }
+                .fecha {
+                    position: absolute;
+                    bottom: 5px;
+                    right: 5px;
+                    padding: 2px;
+                    font-weight: 400;
+                    font-size: 0.8em;
+                    z-index: 1;
+                    color:black;
+                }
+            }
+        }
+
+        .alimento.agregar {
+            width: unset;
+            height: unset;
+            position: sticky;
+            padding: 35px;
+            bottom: 0;
+            right: var(--secondary-padding);
+            z-index: 100;
+            background-color: transparent;
+            transition: all 0.2s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .accion {
+                color: black;
+                font-size: 5em;
+                transition: all 0.2s;
+        }
+
+        .accion:hover {
+                color: rgba(94, 54, 132);
+        }
+    }
+    
+.container_footer {
+    background-color: #7845a7;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.footer_logo {
+    width: 8vw;
+    
+}
+
+.item_footer {
+    list-style-type: none;
+    text-align: center;
+}
+
+.sector_horarios {
+    list-style-type: none;
+}
+
+.sector_redes {
+    list-style-type: none;
+    text-align: center;
+    display: inline-flex;
+    padding: 10px;
+    margin-left: 15px;
+}

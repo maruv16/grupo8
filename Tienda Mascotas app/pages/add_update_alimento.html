@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria & Tienda de Mascotas</title>
+    <link rel="shortcut icon" href="../resources/ico/logoasistvet.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/add_alimento.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <header>
+        <div id="encabezado" class="headercontent">
+            <a href="../index.html">
+                <img class="headerlogo" src="../resources/img/logoasistvet.jpeg" alt="logo_asistvet">
+            </a>
+            <h1 class="title">Veterinaria & Tienda de Mascotas</h1>
+        </div>
+    </header>
+    
+    <main>
+        <h2 class="actionTitle">Crear Alimento Balanceado</h2>
+        <form id="Formulario">
+            <label for="nombre">Nombre del Alimento:</label>
+            <input type="text" id="Titulo" name="nombre" required>
+
+            <label for="marca">Marca del Alimento:</label>
+            <input type="text" id="marca" name="marca" required>
+
+            <label for="descripcion">Descripción del Alimento:</label>
+            <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+            
+            <div class="botones">
+                <button type="submit" id="Crear">Crear</button>
+                <button type="submit" id="Editar">Editar</button>
+                <button type="button" onclick="cancelar()">Cancelar</button>
+            </div>
+        </form>
+    </main>
+    <script src="../js/fetchData.js"></script>
+    <script src="../js/add_update_alimento.js"></script>
+</body>
+</html>
